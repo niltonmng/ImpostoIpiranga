@@ -84,7 +84,7 @@ public class IpirangaImpostoSimplesBR implements IpirangaIf{
 		for (Contribuinte contribuinte : this.contribuintes) {
 			contribuinte.modificaLimiar();
 			if(contribuinte.isAcimaLimiar() == true){
-				acimaLimite.add(contribuinte.getCpf());
+				acimaLimite.add(contribuinte.getNome());
 			}
 		}
 		return acimaLimite;

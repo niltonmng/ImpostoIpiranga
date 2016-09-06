@@ -8,10 +8,6 @@ public abstract class Contribuinte {
 	private double bens;
 	private boolean acimaLimiar;
 	
-	public Contribuinte(){
-		
-	}
-	
 	public Contribuinte(String nome, String cpf) throws Exception{
 		if(nome == null || nome.trim().isEmpty()){
 			throw new Exception("Nome invalido.");
